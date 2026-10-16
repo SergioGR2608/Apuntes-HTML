@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Apuntes HTML</title>
+		<meta charset="utf-8">
+		<meta name="autor" content="Sergio">
+		<meta name="copyright" content="Sergio Galán Raposo">
+		<meta name="description" content="Apuntes con lo importante de HTML">
+		<meta http-equiv="refresh" content="5">
+	</head>
+	<body bgcolor="gray">
+		<h1 align="center"><font color="black"><b>APUNTES HTML</b></font></h1>
+		<hr size="5px" color="orange" noshade>
+		
+		<!--INDICE-->
+		
+		<h2 align="center">ÍNDICE</h2>
+			<p align="center"><b><a href="#tema1">Estructura básica de una página HTML</a></b></p>
+			<p align="center"><b><a href="#tema2">Etiquetas relacionadas con el texto</b></a></p>
+			<p align="center"><b><a href="#tema3">Imágenes y enlaces</a></b></p>
+			<p align="center"><b><a href="#tema4">Listas y viñetas</a></b></p>
+		
+		<!--INDICE-->
+		
+		<hr size="5px" color="orange" noshade>
+		<ol>
+			<li><h2 id="tema1">Estructura básica de una página HTML</h2></li>
+			<font face="Roboto"
+				<p>
+				HTML es ul lenguaje de marcas funciona con etiquetas. Su estructura es así:
+				</p>
+				<p>
+				&lt;<font color="green">Etiqueta de apertura</font>&gt;&lt;<font color="brown">Contenido</font>&gt;&lt;<font color="green">Etiqueta de cierre</font>&gt;
+				</p>
+				<p><b>&lt;!DOCTYPE html&gt;,&lt;html&gt;, &lt;head&gt; </b> y <b>&lt;body&gt;</b> son etiquetas fundamentales.</p>
+				<ul type="circle">
+					<li><b>&lt;!DOCTYPE html&gt;</b> le indica al navegador qué tipo de documento es el que esta ejecutando.</li>
+					<li><b>&lt;html&gt;</b> es la etiqueta principal del documento. Todo el contenido de la página web va detro de ella.</li>
+					<li><b>&lt;head&gt;</b> es la sección de la página que no es visible directamente en el navegador. Aquí van el título y los datos generales de la página web.</li>
+						<ul type="circle">
+							<li><p><b>&lt;title&gt;</b> se usa para darle un título a la página web. Este título será visible en la pestaña del navegador.</p></li>
+							<li><p><b>&lt;meta&gt;</b> es información que el motor de búsqueda usa para analizar el contenido que se encuentra en la web. Los metadatos más usados en esta etiqueta son: </p></li>
+							<ul type="hyphen">
+								<li><p><b>&lt;charset&gt;</b> especifica la codificación de caracteres de la página.</p></li>
+								<li><p><b>&lt;name&gt;</b> es el nombre del metadato, y debe usarse en conjunto con "content".</p></li>
+								<li><p><b>&lt;http-equiv&gt;</b> se utiliza para especificar una directiva.</p></li>
+								<li><p><b>&lt;content&gt;</b> es un valor asociado a <b>&lt;name&gt;</b> y <b>&lt;http-equiv&gt;.</b></p></li>
+							</ul>
+						</ul>
+					<li><b>&lt;body&gt;</b> es la sección de la página que es directamente visible en el navegador.</li>
+						<ul type="circle">
+							<li><b>&lt;p&gt;</b> se usa para hacer párrafos.</li>
+							<li><b>&lt;pre&gt;</b> se utiliza para escribir un texto tl y como viene en cl código, conlos saltos demlínea, los espacios, etc...</li>
+						</ul>
+				</ul>
+			<hr align="center" size="5px" noshade color="orange">
+			<li><h3 id="tema2">Etiquetas relacionadas con el texto</h3></li>
+				<ul>
+					<li type="circle"><b>Caracteres especiales</b> son algunos caracteres que deben ser escritos por comandos. En la imagen adjuna hay una tabla con algunos de ellos: </li>
+					<img scr="C:\Users\smalc\Pictures\Screenshots\Captura.png">
+					<li type="circle"><pre><b>Comentarios: </b>son textos que se ponen en el código pero no afectan en nada al código, solo sirve para que el delarrollador lo vea. Así es su estructura: 
+					<b><font color="green">&lt;!-- COMENTARIO --&gt;&gt;</font></b></pre> </li>
+					<li>La etiqueta<b>&lt;hr&gt;</b> sirve para insertar una línea. Esta etiqueta tiene varios atributos: 
+						<ul type="square">
+							<li><b>"Align"</b> sirve para establecer la posición en la que se encuentra la línea.</li>
+							<li><b>"width"</b> srive para establecer el ancho de la línea.</li>
+							<li><b>"size"</b> sirve para establecer la altura de la línea.</li>
+							<li><b>"noshade"</b> sirve para eliminar el sombreado de la línea.</li>
+						</ul>
+					</li>
+					<li>La fuente se establece con la etiqueta <b>&lt;font&gt;</b>, y tiene los siguientes atributos: 
+						<ul type="square">
+							<li><b>"face"</b> es el nombre de la fuente.</li>
+							<li><b>"color"</b> es el color que se le va a poner al texto. Se escribe en código exadecimal o en texto predefinido.</li>
+							<li><b>"size"</b> indica el tamaño del texto.</li>
+						</ul>
+					</li>
+					<li><b>Resaltos de texto: </b>
+						<ul type="square">
+							<li><b>&lt;b&gt;:</b> negrita.</li>
+							<li><b>&lt;i&gt;:</b> cursiva.</li>
+							<li><b>&lt;u&gt;:</b> Subrayado.</li>
+							<li><b>&lt;s&gt;:</b> tachado.</li>
+							<li><b>&lt;tt&gt;:</b> teletipo.</li>
+							<li><b>&lt;big&gt;:</b> aumenta el tamaño de la fuente.</li>
+							<li><b>&lt;small&gt;:</b> disminuye el tamaño de la fuente.</li>
+						</ul>
+					</li>
+					<li>También existen los encabezados, que van según el tamaño desde "h1" hasta "h6".</li>
+				</ul>
+			<hr align="center" size="5px" noshade color="orange">
+			<li><h3 id="tema3">Imágenes y enlaces</h3></li>
+			<ul type="circle">
+				<li>
+					<pre>Las <b>imágenes</b> se escriben con etiquetas de línea, por lo que no necesitan etiquetas de cierre. Esta es su estructura:
+					<font color="red">&lt;img <font color="green">scr="Ruta de la imagen" alt="x"</font>&gt;</font>
+					<b>"src"</b> sirve para indicar la ruta de la imagen a exponer.
+					<b>"alt"</b> es un texto alternativo para ponerle a la imagen y describirla.
+					</pre>
+					<ul type="square">
+						<li><b>"width"</b> es el ancho que ocupará la imagen.</li>
+						<li><b>"height"</b> es el alto que ocupará la imagen.</li>
+						<p>En caso de que solo se introduzca uno de los dos valores, el valor no puesto se calculará automáticamente para guardar la proporción.</p>
+					</ul>
+				</li>
+				<li>
+				<pre><b>Las Figuras</b> son imágenes con textos asociados. Su estructura es así:
+					<font color="blue">&lt;figure&gt;</font>
+						<font color="green">&lt;img...&gt;</font>
+						<font color="red">&lt;figcaption&gt;...&lt;/figcaption&gt;</font>
+					<font color="blue">&lt;/figure&gt;</font>
+				</pre>
+				</li>
+				<li><b>Enlaces</b>
+					<pre>Los enlaces se escriben con <font color="red">&lt;a&gt;...&lt;/a&gt;</font>. Tiene varios atributos:
+						<ul type="square">
+							<li><b>href:</b> indica la dirección del enlace.</li>
+							<li><b>target:</b> si no tiene valor, el enlace se abrirá en la misma ventana. Si tiene de valor <i>target="_blank", se abrirá en una ventana nueva.</i></li>
+						</ul>
+					</pre>
+				</li>
+			</ul>
+			<hr align="center" size="5px" noshade color="orange">
+			<li><h3 id="tema4">Listas y viñetas</h3>
+				<p>Las listas permiten ordenar y estructurar información. Hay dos tipos: las ordenadas y las no ordenadas:</p>
+				<ul type="circles">
+					<li><b>Ordenadas:</b>
+					<pre>Las ordenadas pueden ponerse con números, letras o números romanos. Su estructura es así:
+						<font color="red">&lt;ol&gt;<font color="blue">type="A/a/1/i/I" start="el número con el que empieza"</font>&gt;</font>
+					</pre>
+				</li>
+				<li><b>Ordenadas:</b>
+					<pre>Las no ordenadas pueden ponerse con círculos, circunferencias o cuadrados. Su estructura es así:
+						<font color="red">&lt;ol&gt;<font color="blue">type="square, circle ó disc"</font>&gt;</font>
+					</pre>
+				</li>
+				<li>Cada elemento en la lista se incluye con la etiqueta <font color="green">&lt;li&gt;...&lt;/li&gt;</font></li>
+				</ul>
+			</li>
+			<hr align="center" size="5px" color="orange" noshade>
+			<p align="center">Sergio Galán Raposo</p>
+			</font>
+			
+		</ol>
+	</body>
+</html>
